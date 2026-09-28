@@ -1,0 +1,4307 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "OptoLink",
+    "printedName": "OptoLink",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "OptoLink"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "OptoLink"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "OptoLink"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "OptoLink"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "OptoLink"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "OptoLinkError",
+        "printedName": "OptoLinkError",
+        "declKind": "Protocol",
+        "usr": "s:8OptoLink0aB5ErrorP",
+        "mangledName": "$s8OptoLink0aB5ErrorP",
+        "moduleName": "OptoLink",
+        "genericSig": "<τ_0_0 : Swift.Error>",
+        "sugared_genericSig": "<Self : Swift.Error>",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Error",
+            "printedName": "Error",
+            "usr": "s:s5ErrorP",
+            "mangledName": "$ss5ErrorP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "OptoLinkApiError",
+        "printedName": "OptoLinkApiError",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "status",
+            "printedName": "status",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8OptoLink0aB8ApiErrorV6statusSivp",
+            "mangledName": "$s8OptoLink0aB8ApiErrorV6statusSivp",
+            "moduleName": "OptoLink",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8OptoLink0aB8ApiErrorV6statusSivg",
+                "mangledName": "$s8OptoLink0aB8ApiErrorV6statusSivg",
+                "moduleName": "OptoLink",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "requestId",
+            "printedName": "requestId",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8OptoLink0aB8ApiErrorV9requestIdSSSgvp",
+            "mangledName": "$s8OptoLink0aB8ApiErrorV9requestIdSSSgvp",
+            "moduleName": "OptoLink",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8OptoLink0aB8ApiErrorV9requestIdSSSgvg",
+                "mangledName": "$s8OptoLink0aB8ApiErrorV9requestIdSSSgvg",
+                "moduleName": "OptoLink",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "details",
+            "printedName": "details",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[OptoLink.OptoLinkErrorDetail]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[OptoLink.OptoLinkErrorDetail]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "OptoLinkErrorDetail",
+                        "printedName": "OptoLink.OptoLinkErrorDetail",
+                        "usr": "s:8OptoLink0aB11ErrorDetailV"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8OptoLink0aB8ApiErrorV7detailsSayAA0abD6DetailVGSgvp",
+            "mangledName": "$s8OptoLink0aB8ApiErrorV7detailsSayAA0abD6DetailVGSgvp",
+            "moduleName": "OptoLink",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "[OptoLink.OptoLinkErrorDetail]?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Array",
+                        "printedName": "[OptoLink.OptoLinkErrorDetail]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "OptoLinkErrorDetail",
+                            "printedName": "OptoLink.OptoLinkErrorDetail",
+                            "usr": "s:8OptoLink0aB11ErrorDetailV"
+                          }
+                        ],
+                        "usr": "s:Sa"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8OptoLink0aB8ApiErrorV7detailsSayAA0abD6DetailVGSgvg",
+                "mangledName": "$s8OptoLink0aB8ApiErrorV7detailsSayAA0abD6DetailVGSgvg",
+                "moduleName": "OptoLink",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "retryAfterSeconds",
+            "printedName": "retryAfterSeconds",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Int?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8OptoLink0aB8ApiErrorV17retryAfterSecondsSiSgvp",
+            "mangledName": "$s8OptoLink0aB8ApiErrorV17retryAfterSecondsSiSgvp",
+            "moduleName": "OptoLink",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Int?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8OptoLink0aB8ApiErrorV17retryAfterSecondsSiSgvg",
+                "mangledName": "$s8OptoLink0aB8ApiErrorV17retryAfterSecondsSiSgvg",
+                "moduleName": "OptoLink",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "raw",
+            "printedName": "raw",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8OptoLink0aB8ApiErrorV3rawSSSgvp",
+            "mangledName": "$s8OptoLink0aB8ApiErrorV3rawSSSgvp",
+            "moduleName": "OptoLink",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8OptoLink0aB8ApiErrorV3rawSSSgvg",
+                "mangledName": "$s8OptoLink0aB8ApiErrorV3rawSSSgvg",
+                "moduleName": "OptoLink",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(status:requestId:details:retryAfterSeconds:raw:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "OptoLinkApiError",
+                "printedName": "OptoLink.OptoLinkApiError",
+                "usr": "s:8OptoLink0aB8ApiErrorV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[OptoLink.OptoLinkErrorDetail]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[OptoLink.OptoLinkErrorDetail]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "OptoLinkErrorDetail",
+                        "printedName": "OptoLink.OptoLinkErrorDetail",
+                        "usr": "s:8OptoLink0aB11ErrorDetailV"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Int?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:8OptoLink0aB8ApiErrorV6status9requestId7details17retryAfterSeconds3rawACSi_SSSgSayAA0abD6DetailVGSgSiSgAItcfc",
+            "mangledName": "$s8OptoLink0aB8ApiErrorV6status9requestId7details17retryAfterSeconds3rawACSi_SSSgSayAA0abD6DetailVGSgSiSgAItcfc",
+            "moduleName": "OptoLink",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "errorDescription",
+            "printedName": "errorDescription",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8OptoLink0aB8ApiErrorV16errorDescriptionSSSgvp",
+            "mangledName": "$s8OptoLink0aB8ApiErrorV16errorDescriptionSSSgvp",
+            "moduleName": "OptoLink",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8OptoLink0aB8ApiErrorV16errorDescriptionSSSgvg",
+                "mangledName": "$s8OptoLink0aB8ApiErrorV16errorDescriptionSSSgvg",
+                "moduleName": "OptoLink",
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:8OptoLink0aB8ApiErrorV",
+        "mangledName": "$s8OptoLink0aB8ApiErrorV",
+        "moduleName": "OptoLink",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "OptoLinkError",
+            "printedName": "OptoLinkError",
+            "usr": "s:8OptoLink0aB5ErrorP",
+            "mangledName": "$s8OptoLink0aB5ErrorP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "LocalizedError",
+            "printedName": "LocalizedError",
+            "usr": "s:10Foundation14LocalizedErrorP",
+            "mangledName": "$s10Foundation14LocalizedErrorP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Error",
+            "printedName": "Error",
+            "usr": "s:s5ErrorP",
+            "mangledName": "$ss5ErrorP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "OptoLinkConnectionError",
+        "printedName": "OptoLinkConnectionError",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "underlying",
+            "printedName": "underlying",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "URLError",
+                "printedName": "Foundation.URLError",
+                "usr": "s:10Foundation8URLErrorV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8OptoLink0aB15ConnectionErrorV10underlying10Foundation8URLErrorVvp",
+            "mangledName": "$s8OptoLink0aB15ConnectionErrorV10underlying10Foundation8URLErrorVvp",
+            "moduleName": "OptoLink",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "URLError",
+                    "printedName": "Foundation.URLError",
+                    "usr": "s:10Foundation8URLErrorV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8OptoLink0aB15ConnectionErrorV10underlying10Foundation8URLErrorVvg",
+                "mangledName": "$s8OptoLink0aB15ConnectionErrorV10underlying10Foundation8URLErrorVvg",
+                "moduleName": "OptoLink",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(underlying:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "OptoLinkConnectionError",
+                "printedName": "OptoLink.OptoLinkConnectionError",
+                "usr": "s:8OptoLink0aB15ConnectionErrorV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "URLError",
+                "printedName": "Foundation.URLError",
+                "usr": "s:10Foundation8URLErrorV"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:8OptoLink0aB15ConnectionErrorV10underlyingAC10Foundation8URLErrorV_tcfc",
+            "mangledName": "$s8OptoLink0aB15ConnectionErrorV10underlyingAC10Foundation8URLErrorV_tcfc",
+            "moduleName": "OptoLink",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:8OptoLink0aB15ConnectionErrorV",
+        "mangledName": "$s8OptoLink0aB15ConnectionErrorV",
+        "moduleName": "OptoLink",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "OptoLinkError",
+            "printedName": "OptoLinkError",
+            "usr": "s:8OptoLink0aB5ErrorP",
+            "mangledName": "$s8OptoLink0aB5ErrorP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Error",
+            "printedName": "Error",
+            "usr": "s:s5ErrorP",
+            "mangledName": "$ss5ErrorP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "OptoLinkErrorDetail",
+        "printedName": "OptoLinkErrorDetail",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "message",
+            "printedName": "message",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8OptoLink0aB11ErrorDetailV7messageSSvp",
+            "mangledName": "$s8OptoLink0aB11ErrorDetailV7messageSSvp",
+            "moduleName": "OptoLink",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8OptoLink0aB11ErrorDetailV7messageSSvg",
+                "mangledName": "$s8OptoLink0aB11ErrorDetailV7messageSSvg",
+                "moduleName": "OptoLink",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "field",
+            "printedName": "field",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8OptoLink0aB11ErrorDetailV5fieldSSSgvp",
+            "mangledName": "$s8OptoLink0aB11ErrorDetailV5fieldSSSgvp",
+            "moduleName": "OptoLink",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8OptoLink0aB11ErrorDetailV5fieldSSSgvg",
+                "mangledName": "$s8OptoLink0aB11ErrorDetailV5fieldSSSgvg",
+                "moduleName": "OptoLink",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(message:field:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "OptoLinkErrorDetail",
+                "printedName": "OptoLink.OptoLinkErrorDetail",
+                "usr": "s:8OptoLink0aB11ErrorDetailV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:8OptoLink0aB11ErrorDetailV7message5fieldACSS_SSSgtcfc",
+            "mangledName": "$s8OptoLink0aB11ErrorDetailV7message5fieldACSS_SSSgtcfc",
+            "moduleName": "OptoLink",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "OptoLinkErrorDetail",
+                "printedName": "OptoLink.OptoLinkErrorDetail",
+                "usr": "s:8OptoLink0aB11ErrorDetailV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "any Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:8OptoLink0aB11ErrorDetailV4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s8OptoLink0aB11ErrorDetailV4fromACs7Decoder_p_tKcfc",
+            "moduleName": "OptoLink",
+            "implicit": true,
+            "throwing": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "any Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8OptoLink0aB11ErrorDetailV6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s8OptoLink0aB11ErrorDetailV6encode2toys7Encoder_p_tKF",
+            "moduleName": "OptoLink",
+            "implicit": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "==",
+            "printedName": "==(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "OptoLinkErrorDetail",
+                "printedName": "OptoLink.OptoLinkErrorDetail",
+                "usr": "s:8OptoLink0aB11ErrorDetailV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "OptoLinkErrorDetail",
+                "printedName": "OptoLink.OptoLinkErrorDetail",
+                "usr": "s:8OptoLink0aB11ErrorDetailV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8OptoLink0aB11ErrorDetailV2eeoiySbAC_ACtFZ",
+            "mangledName": "$s8OptoLink0aB11ErrorDetailV2eeoiySbAC_ACtFZ",
+            "moduleName": "OptoLink",
+            "static": true,
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:8OptoLink0aB11ErrorDetailV",
+        "mangledName": "$s8OptoLink0aB11ErrorDetailV",
+        "moduleName": "OptoLink",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "OptoLink"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "OptoLink"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "OptoLink"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "OptoLink"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "OptoLink"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "OptoLink",
+        "printedName": "OptoLink",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "deviceId",
+            "printedName": "deviceId",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8OptoLinkAAC8deviceIdSSvp",
+            "mangledName": "$s8OptoLinkAAC8deviceIdSSvp",
+            "moduleName": "OptoLink",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8OptoLinkAAC8deviceIdSSvg",
+                "mangledName": "$s8OptoLinkAAC8deviceIdSSvg",
+                "moduleName": "OptoLink",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "config",
+            "printedName": "config",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "OptoLinkConfig",
+                "printedName": "OptoLink.OptoLinkConfig",
+                "usr": "s:8OptoLink0aB6ConfigV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8OptoLinkAAC6configAA0aB6ConfigVvp",
+            "mangledName": "$s8OptoLinkAAC6configAA0aB6ConfigVvp",
+            "moduleName": "OptoLink",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "OptoLinkConfig",
+                    "printedName": "OptoLink.OptoLinkConfig",
+                    "usr": "s:8OptoLink0aB6ConfigV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8OptoLinkAAC6configAA0aB6ConfigVvg",
+                "mangledName": "$s8OptoLinkAAC6configAA0aB6ConfigVvg",
+                "moduleName": "OptoLink",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "initialize",
+            "printedName": "initialize(config:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "OptoLink",
+                "printedName": "OptoLink.OptoLink",
+                "usr": "s:8OptoLinkAAC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "OptoLinkConfig",
+                "printedName": "OptoLink.OptoLinkConfig",
+                "usr": "s:8OptoLink0aB6ConfigV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8OptoLinkAAC10initialize6configAbA0aB6ConfigV_tYaFZ",
+            "mangledName": "$s8OptoLinkAAC10initialize6configAbA0aB6ConfigV_tYaFZ",
+            "moduleName": "OptoLink",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "DiscardableResult",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "instance",
+            "printedName": "instance()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "OptoLink",
+                "printedName": "OptoLink.OptoLink",
+                "usr": "s:8OptoLinkAAC"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8OptoLinkAAC8instanceAByFZ",
+            "mangledName": "$s8OptoLinkAAC8instanceAByFZ",
+            "moduleName": "OptoLink",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "links",
+            "printedName": "links",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AsyncStream",
+                "printedName": "_Concurrency.AsyncStream<OptoLink.OptoLinkData>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "OptoLinkData",
+                    "printedName": "OptoLink.OptoLinkData",
+                    "usr": "s:8OptoLink0aB4DataV"
+                  }
+                ],
+                "usr": "s:ScS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8OptoLinkAAC5linksScSyAA0aB4DataVGvp",
+            "mangledName": "$s8OptoLinkAAC5linksScSyAA0aB4DataVGvp",
+            "moduleName": "OptoLink",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AsyncStream",
+                    "printedName": "_Concurrency.AsyncStream<OptoLink.OptoLinkData>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "OptoLinkData",
+                        "printedName": "OptoLink.OptoLinkData",
+                        "usr": "s:8OptoLink0aB4DataV"
+                      }
+                    ],
+                    "usr": "s:ScS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8OptoLinkAAC5linksScSyAA0aB4DataVGvg",
+                "mangledName": "$s8OptoLinkAAC5linksScSyAA0aB4DataVGvg",
+                "moduleName": "OptoLink",
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "handle",
+            "printedName": "handle(url:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "URL",
+                "printedName": "Foundation.URL",
+                "usr": "s:10Foundation3URLV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8OptoLinkAAC6handle3urly10Foundation3URLV_tF",
+            "mangledName": "$s8OptoLinkAAC6handle3urly10Foundation3URLV_tF",
+            "moduleName": "OptoLink",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "resolveDeferredLink",
+            "printedName": "resolveDeferredLink()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "OptoLink.OptoLinkData?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "OptoLinkData",
+                    "printedName": "OptoLink.OptoLinkData",
+                    "usr": "s:8OptoLink0aB4DataV"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8OptoLinkAAC015resolveDeferredB0AA0aB4DataVSgyYaKF",
+            "mangledName": "$s8OptoLinkAAC015resolveDeferredB0AA0aB4DataVSgyYaKF",
+            "moduleName": "OptoLink",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setIdentity",
+            "printedName": "setIdentity(externalId:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8OptoLinkAAC11setIdentity10externalIdySS_tYaKF",
+            "mangledName": "$s8OptoLinkAAC11setIdentity10externalIdySS_tYaKF",
+            "moduleName": "OptoLink",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "clearIdentity",
+            "printedName": "clearIdentity()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8OptoLinkAAC13clearIdentityyyYaKF",
+            "mangledName": "$s8OptoLinkAAC13clearIdentityyyYaKF",
+            "moduleName": "OptoLink",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "trackEvent",
+            "printedName": "trackEvent(name:properties:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Swift.String]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:SD"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8OptoLinkAAC10trackEvent4name10propertiesySS_SDyS2SGtYaKF",
+            "mangledName": "$s8OptoLinkAAC10trackEvent4name10propertiesySS_SDyS2SGtYaKF",
+            "moduleName": "OptoLink",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "dispose",
+            "printedName": "dispose()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8OptoLinkAAC7disposeyyF",
+            "mangledName": "$s8OptoLinkAAC7disposeyyF",
+            "moduleName": "OptoLink",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:8OptoLinkAAC",
+        "mangledName": "$s8OptoLinkAAC",
+        "moduleName": "OptoLink",
+        "declAttributes": [
+          "Final",
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "hasMissingDesignatedInitializers": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "OptoLink"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "OptoLinkConfig",
+        "printedName": "OptoLinkConfig",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "apiKey",
+            "printedName": "apiKey",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8OptoLink0aB6ConfigV6apiKeySSvp",
+            "mangledName": "$s8OptoLink0aB6ConfigV6apiKeySSvp",
+            "moduleName": "OptoLink",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8OptoLink0aB6ConfigV6apiKeySSvg",
+                "mangledName": "$s8OptoLink0aB6ConfigV6apiKeySSvg",
+                "moduleName": "OptoLink",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8OptoLink0aB6ConfigV6apiKeySSvs",
+                "mangledName": "$s8OptoLink0aB6ConfigV6apiKeySSvs",
+                "moduleName": "OptoLink",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8OptoLink0aB6ConfigV6apiKeySSvM",
+                "mangledName": "$s8OptoLink0aB6ConfigV6apiKeySSvM",
+                "moduleName": "OptoLink",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "orgKey",
+            "printedName": "orgKey",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8OptoLink0aB6ConfigV6orgKeySSvp",
+            "mangledName": "$s8OptoLink0aB6ConfigV6orgKeySSvp",
+            "moduleName": "OptoLink",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8OptoLink0aB6ConfigV6orgKeySSvg",
+                "mangledName": "$s8OptoLink0aB6ConfigV6orgKeySSvg",
+                "moduleName": "OptoLink",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8OptoLink0aB6ConfigV6orgKeySSvs",
+                "mangledName": "$s8OptoLink0aB6ConfigV6orgKeySSvs",
+                "moduleName": "OptoLink",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8OptoLink0aB6ConfigV6orgKeySSvM",
+                "mangledName": "$s8OptoLink0aB6ConfigV6orgKeySSvM",
+                "moduleName": "OptoLink",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "baseUrl",
+            "printedName": "baseUrl",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "URL",
+                "printedName": "Foundation.URL",
+                "usr": "s:10Foundation3URLV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8OptoLink0aB6ConfigV7baseUrl10Foundation3URLVvp",
+            "mangledName": "$s8OptoLink0aB6ConfigV7baseUrl10Foundation3URLVvp",
+            "moduleName": "OptoLink",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "URL",
+                    "printedName": "Foundation.URL",
+                    "usr": "s:10Foundation3URLV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8OptoLink0aB6ConfigV7baseUrl10Foundation3URLVvg",
+                "mangledName": "$s8OptoLink0aB6ConfigV7baseUrl10Foundation3URLVvg",
+                "moduleName": "OptoLink",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "URL",
+                    "printedName": "Foundation.URL",
+                    "usr": "s:10Foundation3URLV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8OptoLink0aB6ConfigV7baseUrl10Foundation3URLVvs",
+                "mangledName": "$s8OptoLink0aB6ConfigV7baseUrl10Foundation3URLVvs",
+                "moduleName": "OptoLink",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8OptoLink0aB6ConfigV7baseUrl10Foundation3URLVvM",
+                "mangledName": "$s8OptoLink0aB6ConfigV7baseUrl10Foundation3URLVvM",
+                "moduleName": "OptoLink",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "timeout",
+            "printedName": "timeout",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8OptoLink0aB6ConfigV7timeoutSdvp",
+            "mangledName": "$s8OptoLink0aB6ConfigV7timeoutSdvp",
+            "moduleName": "OptoLink",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8OptoLink0aB6ConfigV7timeoutSdvg",
+                "mangledName": "$s8OptoLink0aB6ConfigV7timeoutSdvg",
+                "moduleName": "OptoLink",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8OptoLink0aB6ConfigV7timeoutSdvs",
+                "mangledName": "$s8OptoLink0aB6ConfigV7timeoutSdvs",
+                "moduleName": "OptoLink",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8OptoLink0aB6ConfigV7timeoutSdvM",
+                "mangledName": "$s8OptoLink0aB6ConfigV7timeoutSdvM",
+                "moduleName": "OptoLink",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "maxRetries",
+            "printedName": "maxRetries",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8OptoLink0aB6ConfigV10maxRetriesSivp",
+            "mangledName": "$s8OptoLink0aB6ConfigV10maxRetriesSivp",
+            "moduleName": "OptoLink",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8OptoLink0aB6ConfigV10maxRetriesSivg",
+                "mangledName": "$s8OptoLink0aB6ConfigV10maxRetriesSivg",
+                "moduleName": "OptoLink",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8OptoLink0aB6ConfigV10maxRetriesSivs",
+                "mangledName": "$s8OptoLink0aB6ConfigV10maxRetriesSivs",
+                "moduleName": "OptoLink",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8OptoLink0aB6ConfigV10maxRetriesSivM",
+                "mangledName": "$s8OptoLink0aB6ConfigV10maxRetriesSivM",
+                "moduleName": "OptoLink",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "clipboardEnabled",
+            "printedName": "clipboardEnabled",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8OptoLink0aB6ConfigV16clipboardEnabledSbvp",
+            "mangledName": "$s8OptoLink0aB6ConfigV16clipboardEnabledSbvp",
+            "moduleName": "OptoLink",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8OptoLink0aB6ConfigV16clipboardEnabledSbvg",
+                "mangledName": "$s8OptoLink0aB6ConfigV16clipboardEnabledSbvg",
+                "moduleName": "OptoLink",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8OptoLink0aB6ConfigV16clipboardEnabledSbvs",
+                "mangledName": "$s8OptoLink0aB6ConfigV16clipboardEnabledSbvs",
+                "moduleName": "OptoLink",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8OptoLink0aB6ConfigV16clipboardEnabledSbvM",
+                "mangledName": "$s8OptoLink0aB6ConfigV16clipboardEnabledSbvM",
+                "moduleName": "OptoLink",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "logger",
+            "printedName": "logger",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(any OptoLink.OptoLinkLogger)?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "OptoLinkLogger",
+                    "printedName": "any OptoLink.OptoLinkLogger",
+                    "usr": "s:8OptoLink0aB6LoggerP"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8OptoLink0aB6ConfigV6loggerAA0aB6Logger_pSgvp",
+            "mangledName": "$s8OptoLink0aB6ConfigV6loggerAA0aB6Logger_pSgvp",
+            "moduleName": "OptoLink",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "(any OptoLink.OptoLinkLogger)?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "OptoLinkLogger",
+                        "printedName": "any OptoLink.OptoLinkLogger",
+                        "usr": "s:8OptoLink0aB6LoggerP"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8OptoLink0aB6ConfigV6loggerAA0aB6Logger_pSgvg",
+                "mangledName": "$s8OptoLink0aB6ConfigV6loggerAA0aB6Logger_pSgvg",
+                "moduleName": "OptoLink",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "(any OptoLink.OptoLinkLogger)?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "OptoLinkLogger",
+                        "printedName": "any OptoLink.OptoLinkLogger",
+                        "usr": "s:8OptoLink0aB6LoggerP"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8OptoLink0aB6ConfigV6loggerAA0aB6Logger_pSgvs",
+                "mangledName": "$s8OptoLink0aB6ConfigV6loggerAA0aB6Logger_pSgvs",
+                "moduleName": "OptoLink",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8OptoLink0aB6ConfigV6loggerAA0aB6Logger_pSgvM",
+                "mangledName": "$s8OptoLink0aB6ConfigV6loggerAA0aB6Logger_pSgvM",
+                "moduleName": "OptoLink",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(apiKey:orgKey:baseUrl:timeout:maxRetries:clipboardEnabled:logger:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "OptoLinkConfig",
+                "printedName": "OptoLink.OptoLinkConfig",
+                "usr": "s:8OptoLink0aB6ConfigV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "URL",
+                "printedName": "Foundation.URL",
+                "usr": "s:10Foundation3URLV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "hasDefaultArg": true,
+                "usr": "s:Sd"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "hasDefaultArg": true,
+                "usr": "s:Si"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "hasDefaultArg": true,
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(any OptoLink.OptoLinkLogger)?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "OptoLinkLogger",
+                    "printedName": "any OptoLink.OptoLinkLogger",
+                    "usr": "s:8OptoLink0aB6LoggerP"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:8OptoLink0aB6ConfigV6apiKey03orgE07baseUrl7timeout10maxRetries16clipboardEnabled6loggerACSS_SS10Foundation3URLVSdSiSbAA0aB6Logger_pSgtcfc",
+            "mangledName": "$s8OptoLink0aB6ConfigV6apiKey03orgE07baseUrl7timeout10maxRetries16clipboardEnabled6loggerACSS_SS10Foundation3URLVSdSiSbAA0aB6Logger_pSgtcfc",
+            "moduleName": "OptoLink",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:8OptoLink0aB6ConfigV",
+        "mangledName": "$s8OptoLink0aB6ConfigV",
+        "moduleName": "OptoLink",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "OptoLinkLogger",
+        "printedName": "OptoLinkLogger",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "log",
+            "printedName": "log(level:_:error:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "OptoLinkLogLevel",
+                "printedName": "OptoLink.OptoLinkLogLevel",
+                "usr": "s:8OptoLink0aB8LogLevelO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(any Swift.Error)?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Error",
+                    "printedName": "any Swift.Error",
+                    "usr": "s:s5ErrorP"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8OptoLink0aB6LoggerP3log5level_5erroryAA0aB8LogLevelO_SSs5Error_pSgtF",
+            "mangledName": "$s8OptoLink0aB6LoggerP3log5level_5erroryAA0aB8LogLevelO_SSs5Error_pSgtF",
+            "moduleName": "OptoLink",
+            "genericSig": "<τ_0_0 where τ_0_0 : OptoLink.OptoLinkLogger>",
+            "sugared_genericSig": "<Self where Self : OptoLink.OptoLinkLogger>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:8OptoLink0aB6LoggerP",
+        "mangledName": "$s8OptoLink0aB6LoggerP",
+        "moduleName": "OptoLink",
+        "genericSig": "<τ_0_0 : Swift.Sendable>",
+        "sugared_genericSig": "<Self : Swift.Sendable>",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "OptoLinkLogLevel",
+        "printedName": "OptoLinkLogLevel",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "info",
+            "printedName": "info",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(OptoLink.OptoLinkLogLevel.Type) -> OptoLink.OptoLinkLogLevel",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "OptoLinkLogLevel",
+                    "printedName": "OptoLink.OptoLinkLogLevel",
+                    "usr": "s:8OptoLink0aB8LogLevelO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "OptoLink.OptoLinkLogLevel.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "OptoLinkLogLevel",
+                        "printedName": "OptoLink.OptoLinkLogLevel",
+                        "usr": "s:8OptoLink0aB8LogLevelO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:8OptoLink0aB8LogLevelO4infoyA2CmF",
+            "mangledName": "$s8OptoLink0aB8LogLevelO4infoyA2CmF",
+            "moduleName": "OptoLink"
+          },
+          {
+            "kind": "Var",
+            "name": "warning",
+            "printedName": "warning",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(OptoLink.OptoLinkLogLevel.Type) -> OptoLink.OptoLinkLogLevel",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "OptoLinkLogLevel",
+                    "printedName": "OptoLink.OptoLinkLogLevel",
+                    "usr": "s:8OptoLink0aB8LogLevelO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "OptoLink.OptoLinkLogLevel.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "OptoLinkLogLevel",
+                        "printedName": "OptoLink.OptoLinkLogLevel",
+                        "usr": "s:8OptoLink0aB8LogLevelO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:8OptoLink0aB8LogLevelO7warningyA2CmF",
+            "mangledName": "$s8OptoLink0aB8LogLevelO7warningyA2CmF",
+            "moduleName": "OptoLink"
+          },
+          {
+            "kind": "Var",
+            "name": "error",
+            "printedName": "error",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(OptoLink.OptoLinkLogLevel.Type) -> OptoLink.OptoLinkLogLevel",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "OptoLinkLogLevel",
+                    "printedName": "OptoLink.OptoLinkLogLevel",
+                    "usr": "s:8OptoLink0aB8LogLevelO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "OptoLink.OptoLinkLogLevel.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "OptoLinkLogLevel",
+                        "printedName": "OptoLink.OptoLinkLogLevel",
+                        "usr": "s:8OptoLink0aB8LogLevelO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:8OptoLink0aB8LogLevelO5erroryA2CmF",
+            "mangledName": "$s8OptoLink0aB8LogLevelO5erroryA2CmF",
+            "moduleName": "OptoLink"
+          },
+          {
+            "kind": "Function",
+            "name": "==",
+            "printedName": "==(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "OptoLinkLogLevel",
+                "printedName": "OptoLink.OptoLinkLogLevel",
+                "usr": "s:8OptoLink0aB8LogLevelO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "OptoLinkLogLevel",
+                "printedName": "OptoLink.OptoLinkLogLevel",
+                "usr": "s:8OptoLink0aB8LogLevelO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8OptoLink0aB8LogLevelO2eeoiySbAC_ACtFZ",
+            "mangledName": "$s8OptoLink0aB8LogLevelO2eeoiySbAC_ACtFZ",
+            "moduleName": "OptoLink",
+            "static": true,
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "hashValue",
+            "printedName": "hashValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8OptoLink0aB8LogLevelO9hashValueSivp",
+            "mangledName": "$s8OptoLink0aB8LogLevelO9hashValueSivp",
+            "moduleName": "OptoLink",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8OptoLink0aB8LogLevelO9hashValueSivg",
+                "mangledName": "$s8OptoLink0aB8LogLevelO9hashValueSivg",
+                "moduleName": "OptoLink",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "hash",
+            "printedName": "hash(into:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Hasher",
+                "printedName": "Swift.Hasher",
+                "paramValueOwnership": "InOut",
+                "usr": "s:s6HasherV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8OptoLink0aB8LogLevelO4hash4intoys6HasherVz_tF",
+            "mangledName": "$s8OptoLink0aB8LogLevelO4hash4intoys6HasherVz_tF",
+            "moduleName": "OptoLink",
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:8OptoLink0aB8LogLevelO",
+        "mangledName": "$s8OptoLink0aB8LogLevelO",
+        "moduleName": "OptoLink",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "OptoLinkData",
+        "printedName": "OptoLinkData",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "linkId",
+            "printedName": "linkId",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8OptoLink0aB4DataV6linkIdSSSgvp",
+            "mangledName": "$s8OptoLink0aB4DataV6linkIdSSSgvp",
+            "moduleName": "OptoLink",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8OptoLink0aB4DataV6linkIdSSSgvg",
+                "mangledName": "$s8OptoLink0aB4DataV6linkIdSSSgvg",
+                "moduleName": "OptoLink",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "path",
+            "printedName": "path",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8OptoLink0aB4DataV4pathSSvp",
+            "mangledName": "$s8OptoLink0aB4DataV4pathSSvp",
+            "moduleName": "OptoLink",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8OptoLink0aB4DataV4pathSSvg",
+                "mangledName": "$s8OptoLink0aB4DataV4pathSSvg",
+                "moduleName": "OptoLink",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "params",
+            "printedName": "params",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.String : Swift.String]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Swift.String]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8OptoLink0aB4DataV6paramsSDyS2SGSgvp",
+            "mangledName": "$s8OptoLink0aB4DataV6paramsSDyS2SGSgvp",
+            "moduleName": "OptoLink",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "[Swift.String : Swift.String]?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Dictionary",
+                        "printedName": "[Swift.String : Swift.String]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ],
+                        "usr": "s:SD"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8OptoLink0aB4DataV6paramsSDyS2SGSgvg",
+                "mangledName": "$s8OptoLink0aB4DataV6paramsSDyS2SGSgvg",
+                "moduleName": "OptoLink",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "matchMethod",
+            "printedName": "matchMethod",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "MatchMethod",
+                "printedName": "OptoLink.MatchMethod",
+                "usr": "s:8OptoLink11MatchMethodO"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8OptoLink0aB4DataV11matchMethodAA05MatchE0Ovp",
+            "mangledName": "$s8OptoLink0aB4DataV11matchMethodAA05MatchE0Ovp",
+            "moduleName": "OptoLink",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MatchMethod",
+                    "printedName": "OptoLink.MatchMethod",
+                    "usr": "s:8OptoLink11MatchMethodO"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8OptoLink0aB4DataV11matchMethodAA05MatchE0Ovg",
+                "mangledName": "$s8OptoLink0aB4DataV11matchMethodAA05MatchE0Ovg",
+                "moduleName": "OptoLink",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "confidence",
+            "printedName": "confidence",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "MatchConfidence",
+                "printedName": "OptoLink.MatchConfidence",
+                "usr": "s:8OptoLink15MatchConfidenceO"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8OptoLink0aB4DataV10confidenceAA15MatchConfidenceOvp",
+            "mangledName": "$s8OptoLink0aB4DataV10confidenceAA15MatchConfidenceOvp",
+            "moduleName": "OptoLink",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MatchConfidence",
+                    "printedName": "OptoLink.MatchConfidence",
+                    "usr": "s:8OptoLink15MatchConfidenceO"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8OptoLink0aB4DataV10confidenceAA15MatchConfidenceOvg",
+                "mangledName": "$s8OptoLink0aB4DataV10confidenceAA15MatchConfidenceOvg",
+                "moduleName": "OptoLink",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "isDeferred",
+            "printedName": "isDeferred",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8OptoLink0aB4DataV10isDeferredSbvp",
+            "mangledName": "$s8OptoLink0aB4DataV10isDeferredSbvp",
+            "moduleName": "OptoLink",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8OptoLink0aB4DataV10isDeferredSbvg",
+                "mangledName": "$s8OptoLink0aB4DataV10isDeferredSbvg",
+                "moduleName": "OptoLink",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "score",
+            "printedName": "score",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Int?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8OptoLink0aB4DataV5scoreSiSgvp",
+            "mangledName": "$s8OptoLink0aB4DataV5scoreSiSgvp",
+            "moduleName": "OptoLink",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Int?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8OptoLink0aB4DataV5scoreSiSgvg",
+                "mangledName": "$s8OptoLink0aB4DataV5scoreSiSgvg",
+                "moduleName": "OptoLink",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(linkId:path:params:matchMethod:confidence:isDeferred:score:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "OptoLinkData",
+                "printedName": "OptoLink.OptoLinkData",
+                "usr": "s:8OptoLink0aB4DataV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.String : Swift.String]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Swift.String]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "MatchMethod",
+                "printedName": "OptoLink.MatchMethod",
+                "usr": "s:8OptoLink11MatchMethodO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "MatchConfidence",
+                "printedName": "OptoLink.MatchConfidence",
+                "usr": "s:8OptoLink15MatchConfidenceO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Int?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:8OptoLink0aB4DataV6linkId4path6params11matchMethod10confidence10isDeferred5scoreACSSSg_SSSDyS2SGSgAA05MatchI0OAA0N10ConfidenceOSbSiSgtcfc",
+            "mangledName": "$s8OptoLink0aB4DataV6linkId4path6params11matchMethod10confidence10isDeferred5scoreACSSSg_SSSDyS2SGSgAA05MatchI0OAA0N10ConfidenceOSbSiSgtcfc",
+            "moduleName": "OptoLink",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "OptoLinkData",
+                "printedName": "OptoLink.OptoLinkData",
+                "usr": "s:8OptoLink0aB4DataV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "any Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:8OptoLink0aB4DataV4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s8OptoLink0aB4DataV4fromACs7Decoder_p_tKcfc",
+            "moduleName": "OptoLink",
+            "implicit": true,
+            "throwing": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "any Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8OptoLink0aB4DataV6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s8OptoLink0aB4DataV6encode2toys7Encoder_p_tKF",
+            "moduleName": "OptoLink",
+            "implicit": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "==",
+            "printedName": "==(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "OptoLinkData",
+                "printedName": "OptoLink.OptoLinkData",
+                "usr": "s:8OptoLink0aB4DataV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "OptoLinkData",
+                "printedName": "OptoLink.OptoLinkData",
+                "usr": "s:8OptoLink0aB4DataV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8OptoLink0aB4DataV2eeoiySbAC_ACtFZ",
+            "mangledName": "$s8OptoLink0aB4DataV2eeoiySbAC_ACtFZ",
+            "moduleName": "OptoLink",
+            "static": true,
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:8OptoLink0aB4DataV",
+        "mangledName": "$s8OptoLink0aB4DataV",
+        "moduleName": "OptoLink",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "MatchMethod",
+        "printedName": "MatchMethod",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "clipboard",
+            "printedName": "clipboard",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(OptoLink.MatchMethod.Type) -> OptoLink.MatchMethod",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MatchMethod",
+                    "printedName": "OptoLink.MatchMethod",
+                    "usr": "s:8OptoLink11MatchMethodO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "OptoLink.MatchMethod.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "MatchMethod",
+                        "printedName": "OptoLink.MatchMethod",
+                        "usr": "s:8OptoLink11MatchMethodO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:8OptoLink11MatchMethodO9clipboardyA2CmF",
+            "mangledName": "$s8OptoLink11MatchMethodO9clipboardyA2CmF",
+            "moduleName": "OptoLink"
+          },
+          {
+            "kind": "Var",
+            "name": "installReferrer",
+            "printedName": "installReferrer",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(OptoLink.MatchMethod.Type) -> OptoLink.MatchMethod",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MatchMethod",
+                    "printedName": "OptoLink.MatchMethod",
+                    "usr": "s:8OptoLink11MatchMethodO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "OptoLink.MatchMethod.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "MatchMethod",
+                        "printedName": "OptoLink.MatchMethod",
+                        "usr": "s:8OptoLink11MatchMethodO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:8OptoLink11MatchMethodO15installReferreryA2CmF",
+            "mangledName": "$s8OptoLink11MatchMethodO15installReferreryA2CmF",
+            "moduleName": "OptoLink"
+          },
+          {
+            "kind": "Var",
+            "name": "fingerprintExact",
+            "printedName": "fingerprintExact",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(OptoLink.MatchMethod.Type) -> OptoLink.MatchMethod",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MatchMethod",
+                    "printedName": "OptoLink.MatchMethod",
+                    "usr": "s:8OptoLink11MatchMethodO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "OptoLink.MatchMethod.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "MatchMethod",
+                        "printedName": "OptoLink.MatchMethod",
+                        "usr": "s:8OptoLink11MatchMethodO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:8OptoLink11MatchMethodO16fingerprintExactyA2CmF",
+            "mangledName": "$s8OptoLink11MatchMethodO16fingerprintExactyA2CmF",
+            "moduleName": "OptoLink",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "fingerprintScored",
+            "printedName": "fingerprintScored",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(OptoLink.MatchMethod.Type) -> OptoLink.MatchMethod",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MatchMethod",
+                    "printedName": "OptoLink.MatchMethod",
+                    "usr": "s:8OptoLink11MatchMethodO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "OptoLink.MatchMethod.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "MatchMethod",
+                        "printedName": "OptoLink.MatchMethod",
+                        "usr": "s:8OptoLink11MatchMethodO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:8OptoLink11MatchMethodO17fingerprintScoredyA2CmF",
+            "mangledName": "$s8OptoLink11MatchMethodO17fingerprintScoredyA2CmF",
+            "moduleName": "OptoLink"
+          },
+          {
+            "kind": "Var",
+            "name": "ipFuzzy",
+            "printedName": "ipFuzzy",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(OptoLink.MatchMethod.Type) -> OptoLink.MatchMethod",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MatchMethod",
+                    "printedName": "OptoLink.MatchMethod",
+                    "usr": "s:8OptoLink11MatchMethodO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "OptoLink.MatchMethod.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "MatchMethod",
+                        "printedName": "OptoLink.MatchMethod",
+                        "usr": "s:8OptoLink11MatchMethodO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:8OptoLink11MatchMethodO7ipFuzzyyA2CmF",
+            "mangledName": "$s8OptoLink11MatchMethodO7ipFuzzyyA2CmF",
+            "moduleName": "OptoLink"
+          },
+          {
+            "kind": "Var",
+            "name": "direct",
+            "printedName": "direct",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(OptoLink.MatchMethod.Type) -> OptoLink.MatchMethod",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MatchMethod",
+                    "printedName": "OptoLink.MatchMethod",
+                    "usr": "s:8OptoLink11MatchMethodO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "OptoLink.MatchMethod.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "MatchMethod",
+                        "printedName": "OptoLink.MatchMethod",
+                        "usr": "s:8OptoLink11MatchMethodO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:8OptoLink11MatchMethodO6directyA2CmF",
+            "mangledName": "$s8OptoLink11MatchMethodO6directyA2CmF",
+            "moduleName": "OptoLink"
+          },
+          {
+            "kind": "Var",
+            "name": "none",
+            "printedName": "none",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(OptoLink.MatchMethod.Type) -> OptoLink.MatchMethod",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MatchMethod",
+                    "printedName": "OptoLink.MatchMethod",
+                    "usr": "s:8OptoLink11MatchMethodO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "OptoLink.MatchMethod.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "MatchMethod",
+                        "printedName": "OptoLink.MatchMethod",
+                        "usr": "s:8OptoLink11MatchMethodO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:8OptoLink11MatchMethodO4noneyA2CmF",
+            "mangledName": "$s8OptoLink11MatchMethodO4noneyA2CmF",
+            "moduleName": "OptoLink"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "MatchMethod",
+                "printedName": "OptoLink.MatchMethod",
+                "usr": "s:8OptoLink11MatchMethodO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "any Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:8OptoLink11MatchMethodO4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s8OptoLink11MatchMethodO4fromACs7Decoder_p_tKcfc",
+            "moduleName": "OptoLink",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "throwing": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(rawValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "OptoLink.MatchMethod?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MatchMethod",
+                    "printedName": "OptoLink.MatchMethod",
+                    "usr": "s:8OptoLink11MatchMethodO"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:8OptoLink11MatchMethodO8rawValueACSgSS_tcfc",
+            "mangledName": "$s8OptoLink11MatchMethodO8rawValueACSgSS_tcfc",
+            "moduleName": "OptoLink",
+            "implicit": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "rawValue",
+            "printedName": "rawValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8OptoLink11MatchMethodO8rawValueSSvp",
+            "mangledName": "$s8OptoLink11MatchMethodO8rawValueSSvp",
+            "moduleName": "OptoLink",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8OptoLink11MatchMethodO8rawValueSSvg",
+                "mangledName": "$s8OptoLink11MatchMethodO8rawValueSSvg",
+                "moduleName": "OptoLink",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:8OptoLink11MatchMethodO",
+        "mangledName": "$s8OptoLink11MatchMethodO",
+        "moduleName": "OptoLink",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "enumRawTypeName": "String",
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RawRepresentable",
+            "printedName": "RawRepresentable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "RawValue",
+                "printedName": "RawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:SY",
+            "mangledName": "$sSY"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "MatchConfidence",
+        "printedName": "MatchConfidence",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "exact",
+            "printedName": "exact",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(OptoLink.MatchConfidence.Type) -> OptoLink.MatchConfidence",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MatchConfidence",
+                    "printedName": "OptoLink.MatchConfidence",
+                    "usr": "s:8OptoLink15MatchConfidenceO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "OptoLink.MatchConfidence.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "MatchConfidence",
+                        "printedName": "OptoLink.MatchConfidence",
+                        "usr": "s:8OptoLink15MatchConfidenceO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:8OptoLink15MatchConfidenceO5exactyA2CmF",
+            "mangledName": "$s8OptoLink15MatchConfidenceO5exactyA2CmF",
+            "moduleName": "OptoLink"
+          },
+          {
+            "kind": "Var",
+            "name": "high",
+            "printedName": "high",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(OptoLink.MatchConfidence.Type) -> OptoLink.MatchConfidence",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MatchConfidence",
+                    "printedName": "OptoLink.MatchConfidence",
+                    "usr": "s:8OptoLink15MatchConfidenceO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "OptoLink.MatchConfidence.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "MatchConfidence",
+                        "printedName": "OptoLink.MatchConfidence",
+                        "usr": "s:8OptoLink15MatchConfidenceO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:8OptoLink15MatchConfidenceO4highyA2CmF",
+            "mangledName": "$s8OptoLink15MatchConfidenceO4highyA2CmF",
+            "moduleName": "OptoLink"
+          },
+          {
+            "kind": "Var",
+            "name": "medium",
+            "printedName": "medium",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(OptoLink.MatchConfidence.Type) -> OptoLink.MatchConfidence",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MatchConfidence",
+                    "printedName": "OptoLink.MatchConfidence",
+                    "usr": "s:8OptoLink15MatchConfidenceO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "OptoLink.MatchConfidence.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "MatchConfidence",
+                        "printedName": "OptoLink.MatchConfidence",
+                        "usr": "s:8OptoLink15MatchConfidenceO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:8OptoLink15MatchConfidenceO6mediumyA2CmF",
+            "mangledName": "$s8OptoLink15MatchConfidenceO6mediumyA2CmF",
+            "moduleName": "OptoLink"
+          },
+          {
+            "kind": "Var",
+            "name": "low",
+            "printedName": "low",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(OptoLink.MatchConfidence.Type) -> OptoLink.MatchConfidence",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MatchConfidence",
+                    "printedName": "OptoLink.MatchConfidence",
+                    "usr": "s:8OptoLink15MatchConfidenceO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "OptoLink.MatchConfidence.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "MatchConfidence",
+                        "printedName": "OptoLink.MatchConfidence",
+                        "usr": "s:8OptoLink15MatchConfidenceO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:8OptoLink15MatchConfidenceO3lowyA2CmF",
+            "mangledName": "$s8OptoLink15MatchConfidenceO3lowyA2CmF",
+            "moduleName": "OptoLink"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "MatchConfidence",
+                "printedName": "OptoLink.MatchConfidence",
+                "usr": "s:8OptoLink15MatchConfidenceO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "any Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:8OptoLink15MatchConfidenceO4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s8OptoLink15MatchConfidenceO4fromACs7Decoder_p_tKcfc",
+            "moduleName": "OptoLink",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "throwing": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(rawValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "OptoLink.MatchConfidence?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MatchConfidence",
+                    "printedName": "OptoLink.MatchConfidence",
+                    "usr": "s:8OptoLink15MatchConfidenceO"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:8OptoLink15MatchConfidenceO8rawValueACSgSS_tcfc",
+            "mangledName": "$s8OptoLink15MatchConfidenceO8rawValueACSgSS_tcfc",
+            "moduleName": "OptoLink",
+            "implicit": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "rawValue",
+            "printedName": "rawValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8OptoLink15MatchConfidenceO8rawValueSSvp",
+            "mangledName": "$s8OptoLink15MatchConfidenceO8rawValueSSvp",
+            "moduleName": "OptoLink",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8OptoLink15MatchConfidenceO8rawValueSSvg",
+                "mangledName": "$s8OptoLink15MatchConfidenceO8rawValueSSvg",
+                "moduleName": "OptoLink",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:8OptoLink15MatchConfidenceO",
+        "mangledName": "$s8OptoLink15MatchConfidenceO",
+        "moduleName": "OptoLink",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "enumRawTypeName": "String",
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RawRepresentable",
+            "printedName": "RawRepresentable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "RawValue",
+                "printedName": "RawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:SY",
+            "mangledName": "$sSY"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "OptoLink"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "OptoLink"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "OptoLink"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "OptoLink"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "OptoLink"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "OptoLink"
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/andrew\/Development\/OPTOLINK\/optolink-ios\/.build\/xcframework-release\/intermediate\/dd-mac\/Build\/Intermediates.noindex\/OptoLink.build\/Release\/OptoLink-t.build\/DerivedSources\/resource_bundle_accessor.swift",
+      "kind": "StringLiteral",
+      "offset": 307,
+      "length": 19,
+      "value": "\"OptoLink_OptoLink\""
+    },
+    {
+      "filePath": "\/Users\/andrew\/Development\/OPTOLINK\/optolink-ios\/.build\/xcframework-release\/intermediate\/dd-mac\/Build\/Intermediates.noindex\/OptoLink.build\/Release\/OptoLink-t.build\/DerivedSources\/resource_bundle_accessor.swift",
+      "kind": "Array",
+      "offset": 973,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/andrew\/Development\/OPTOLINK\/optolink-ios\/.build\/xcframework-release\/intermediate\/dd-mac\/Build\/Intermediates.noindex\/OptoLink.build\/Release\/OptoLink-t.build\/DerivedSources\/resource_bundle_accessor.swift",
+      "kind": "StringLiteral",
+      "offset": 1500,
+      "length": 9,
+      "value": "\".bundle\""
+    },
+    {
+      "filePath": "\/Users\/andrew\/Development\/OPTOLINK\/optolink-ios\/.build\/xcframework-release\/intermediate\/dd-mac\/Build\/Intermediates.noindex\/OptoLink.build\/Release\/OptoLink-t.build\/DerivedSources\/resource_bundle_accessor.swift",
+      "kind": "StringLiteral",
+      "offset": 1652,
+      "length": 47,
+      "value": "\"unable to find bundle named OptoLink_OptoLink\""
+    },
+    {
+      "filePath": "\/Users\/andrew\/Development\/OPTOLINK\/optolink-ios\/Sources\/OptoLink\/ErrorMapping.swift",
+      "kind": "StringLiteral",
+      "offset": 646,
+      "length": 27,
+      "value": "\"Retry after (\\d+) second\""
+    },
+    {
+      "filePath": "\/Users\/andrew\/Development\/OPTOLINK\/optolink-ios\/Sources\/OptoLink\/HttpClient.swift",
+      "kind": "StringLiteral",
+      "offset": 1616,
+      "length": 5,
+      "value": "\"GET\""
+    },
+    {
+      "filePath": "\/Users\/andrew\/Development\/OPTOLINK\/optolink-ios\/Sources\/OptoLink\/HttpClient.swift",
+      "kind": "StringLiteral",
+      "offset": 1642,
+      "length": 6,
+      "value": "\"POST\""
+    },
+    {
+      "filePath": "\/Users\/andrew\/Development\/OPTOLINK\/optolink-ios\/Sources\/OptoLink\/Identity.swift",
+      "kind": "StringLiteral",
+      "offset": 1484,
+      "length": 20,
+      "value": "\"optolink_device_id\""
+    },
+    {
+      "filePath": "\/Users\/andrew\/Development\/OPTOLINK\/optolink-ios\/Sources\/OptoLink\/Identity.swift",
+      "kind": "StringLiteral",
+      "offset": 1541,
+      "length": 28,
+      "value": "\"optolink_first_launch_done\""
+    },
+    {
+      "filePath": "\/Users\/andrew\/Development\/OPTOLINK\/optolink-ios\/Sources\/OptoLink\/LinkIngestionEngine.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2111,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/andrew\/Development\/OPTOLINK\/optolink-ios\/Sources\/OptoLink\/LinkIngestionEngine.swift",
+      "kind": "Dictionary",
+      "offset": 8280,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/andrew\/Development\/OPTOLINK\/optolink-ios\/Sources\/OptoLink\/OptoLink.swift",
+      "kind": "Dictionary",
+      "offset": 11857,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/andrew\/Development\/OPTOLINK\/optolink-ios\/Sources\/OptoLink\/OptoLinkConfig.swift",
+      "kind": "IntegerLiteral",
+      "offset": 743,
+      "length": 2,
+      "value": "10"
+    },
+    {
+      "filePath": "\/Users\/andrew\/Development\/OPTOLINK\/optolink-ios\/Sources\/OptoLink\/OptoLinkConfig.swift",
+      "kind": "IntegerLiteral",
+      "offset": 773,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/andrew\/Development\/OPTOLINK\/optolink-ios\/Sources\/OptoLink\/OptoLinkConfig.swift",
+      "kind": "BooleanLiteral",
+      "offset": 809,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/andrew\/Development\/OPTOLINK\/optolink-ios\/Sources\/OptoLink\/OptoLinkData.swift",
+      "kind": "StringLiteral",
+      "offset": 1382,
+      "length": 11,
+      "value": "\"CLIPBOARD\""
+    },
+    {
+      "filePath": "\/Users\/andrew\/Development\/OPTOLINK\/optolink-ios\/Sources\/OptoLink\/OptoLinkData.swift",
+      "kind": "StringLiteral",
+      "offset": 1421,
+      "length": 18,
+      "value": "\"INSTALL_REFERRER\""
+    },
+    {
+      "filePath": "\/Users\/andrew\/Development\/OPTOLINK\/optolink-ios\/Sources\/OptoLink\/OptoLinkData.swift",
+      "kind": "StringLiteral",
+      "offset": 1501,
+      "length": 19,
+      "value": "\"FINGERPRINT_EXACT\""
+    },
+    {
+      "filePath": "\/Users\/andrew\/Development\/OPTOLINK\/optolink-ios\/Sources\/OptoLink\/OptoLinkData.swift",
+      "kind": "StringLiteral",
+      "offset": 1550,
+      "length": 20,
+      "value": "\"FINGERPRINT_SCORED\""
+    },
+    {
+      "filePath": "\/Users\/andrew\/Development\/OPTOLINK\/optolink-ios\/Sources\/OptoLink\/OptoLinkData.swift",
+      "kind": "StringLiteral",
+      "offset": 1590,
+      "length": 10,
+      "value": "\"IP_FUZZY\""
+    },
+    {
+      "filePath": "\/Users\/andrew\/Development\/OPTOLINK\/optolink-ios\/Sources\/OptoLink\/OptoLinkData.swift",
+      "kind": "StringLiteral",
+      "offset": 1619,
+      "length": 8,
+      "value": "\"DIRECT\""
+    },
+    {
+      "filePath": "\/Users\/andrew\/Development\/OPTOLINK\/optolink-ios\/Sources\/OptoLink\/OptoLinkData.swift",
+      "kind": "StringLiteral",
+      "offset": 1644,
+      "length": 6,
+      "value": "\"NONE\""
+    },
+    {
+      "filePath": "\/Users\/andrew\/Development\/OPTOLINK\/optolink-ios\/Sources\/OptoLink\/OptoLinkData.swift",
+      "kind": "StringLiteral",
+      "offset": 1907,
+      "length": 7,
+      "value": "\"EXACT\""
+    },
+    {
+      "filePath": "\/Users\/andrew\/Development\/OPTOLINK\/optolink-ios\/Sources\/OptoLink\/OptoLinkData.swift",
+      "kind": "StringLiteral",
+      "offset": 1923,
+      "length": 6,
+      "value": "\"HIGH\""
+    },
+    {
+      "filePath": "\/Users\/andrew\/Development\/OPTOLINK\/optolink-ios\/Sources\/OptoLink\/OptoLinkData.swift",
+      "kind": "StringLiteral",
+      "offset": 1940,
+      "length": 8,
+      "value": "\"MEDIUM\""
+    },
+    {
+      "filePath": "\/Users\/andrew\/Development\/OPTOLINK\/optolink-ios\/Sources\/OptoLink\/OptoLinkData.swift",
+      "kind": "StringLiteral",
+      "offset": 1956,
+      "length": 5,
+      "value": "\"LOW\""
+    },
+    {
+      "filePath": "\/Users\/andrew\/Development\/OPTOLINK\/optolink-ios\/Sources\/OptoLink\/SDKVersion.swift",
+      "kind": "StringLiteral",
+      "offset": 303,
+      "length": 7,
+      "value": "\"0.1.0\""
+    },
+    {
+      "filePath": "\/Users\/andrew\/Development\/OPTOLINK\/optolink-ios\/Sources\/OptoLink\/TelemetryClient.swift",
+      "kind": "Dictionary",
+      "offset": 3072,
+      "length": 3,
+      "value": "[]"
+    }
+  ]
+}

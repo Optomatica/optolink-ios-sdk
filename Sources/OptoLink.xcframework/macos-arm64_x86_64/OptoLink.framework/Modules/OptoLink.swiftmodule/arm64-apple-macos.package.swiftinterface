@@ -1,0 +1,120 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 6.4 effective-5.10 (swiftlang-6.4.0.34.1 clang-2100.3.34.1)
+// swift-module-flags: -target arm64-apple-macos12.0 -enable-objc-interop -enable-library-evolution -language-mode 5 -O -enable-experimental-feature DebugDescriptionMacro -module-name OptoLink -package-name optolink_ios
+// swift-module-flags-ignorable:  -formal-cxx-interoperability-mode=off -interface-compiler-version 6.4
+import Foundation
+import Foundation/*.Bundle*/
+import Foundation/*.ProcessInfo*/
+import Foundation/*.URL*/
+import Swift
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+public protocol OptoLinkError : Swift::Error {
+}
+public struct OptoLinkApiError : OptoLink::OptoLinkError, Foundation::LocalizedError {
+  public let status: Swift::Int
+  public let requestId: Swift::String?
+  public let details: [OptoLink::OptoLinkErrorDetail]?
+  public let retryAfterSeconds: Swift::Int?
+  public let raw: Swift::String?
+  public init(status: Swift::Int, requestId: Swift::String? = nil, details: [OptoLink::OptoLinkErrorDetail]? = nil, retryAfterSeconds: Swift::Int? = nil, raw: Swift::String? = nil)
+  public var errorDescription: Swift::String? {
+    get
+  }
+}
+public struct OptoLinkConnectionError : OptoLink::OptoLinkError {
+  public let underlying: Foundation::URLError
+  public init(underlying: Foundation::URLError)
+}
+public struct OptoLinkErrorDetail : Swift::Sendable, Swift::Codable, Swift::Equatable {
+  public let message: Swift::String
+  public let field: Swift::String?
+  public init(message: Swift::String, field: Swift::String?)
+  public static func == (a: OptoLink::OptoLinkErrorDetail, b: OptoLink::OptoLinkErrorDetail) -> Swift::Bool
+  public func encode(to encoder: any Swift::Encoder) throws
+  public init(from decoder: any Swift::Decoder) throws
+}
+@_hasMissingDesignatedInitializers final public class OptoLink : Swift::Sendable {
+  final public let deviceId: Swift::String
+  final public let config: OptoLink::OptoLinkConfig
+  @discardableResult
+  public static func initialize(config: OptoLink::OptoLinkConfig) async -> OptoLink::OptoLink
+  public static func instance() -> OptoLink::OptoLink
+  final public var links: _Concurrency::AsyncStream<OptoLink::OptoLinkData> {
+    get
+  }
+  final public func handle(url: Foundation::URL)
+  final public func resolveDeferredLink() async throws -> OptoLink::OptoLinkData?
+  final public func setIdentity(externalId: Swift::String) async throws
+  final public func clearIdentity() async throws
+  final public func trackEvent(name: Swift::String, properties: [Swift::String : Swift::String] = [:]) async throws
+  final public func dispose()
+  @objc deinit
+}
+public struct OptoLinkConfig : Swift::Sendable {
+  public var apiKey: Swift::String
+  public var orgKey: Swift::String
+  public var baseUrl: Foundation::URL
+  public var timeout: Foundation::TimeInterval
+  public var maxRetries: Swift::Int
+  public var clipboardEnabled: Swift::Bool
+  public var logger: (any OptoLink::OptoLinkLogger)?
+  public init(apiKey: Swift::String, orgKey: Swift::String, baseUrl: Foundation::URL, timeout: Foundation::TimeInterval = 10, maxRetries: Swift::Int = 2, clipboardEnabled: Swift::Bool = true, logger: (any OptoLink::OptoLinkLogger)? = nil)
+}
+public protocol OptoLinkLogger : Swift::Sendable {
+  func log(level: OptoLink::OptoLinkLogLevel, _ message: Swift::String, error: (any Swift::Error)?)
+}
+public enum OptoLinkLogLevel : Swift::Sendable {
+  case info, warning, error
+  public static func == (a: OptoLink::OptoLinkLogLevel, b: OptoLink::OptoLinkLogLevel) -> Swift::Bool
+  public func hash(into hasher: inout Swift::Hasher)
+  public var hashValue: Swift::Int {
+    get
+  }
+}
+public struct OptoLinkData : Swift::Sendable, Swift::Codable, Swift::Equatable {
+  public let linkId: Swift::String?
+  public let path: Swift::String
+  public let params: [Swift::String : Swift::String]?
+  public let matchMethod: OptoLink::MatchMethod
+  public let confidence: OptoLink::MatchConfidence
+  public let isDeferred: Swift::Bool
+  public let score: Swift::Int?
+  public init(linkId: Swift::String?, path: Swift::String, params: [Swift::String : Swift::String]?, matchMethod: OptoLink::MatchMethod, confidence: OptoLink::MatchConfidence, isDeferred: Swift::Bool, score: Swift::Int? = nil)
+  public static func == (a: OptoLink::OptoLinkData, b: OptoLink::OptoLinkData) -> Swift::Bool
+  public func encode(to encoder: any Swift::Encoder) throws
+  public init(from decoder: any Swift::Decoder) throws
+}
+public enum MatchMethod : Swift::String, Swift::Sendable, Swift::Codable {
+  case clipboard
+  case installReferrer
+  case fingerprintExact
+  case fingerprintScored
+  case ipFuzzy
+  case direct
+  case none
+  public init(from decoder: any Swift::Decoder) throws
+  public init?(rawValue: Swift::String)
+  public typealias RawValue = Swift::String
+  public var rawValue: Swift::String {
+    get
+  }
+}
+public enum MatchConfidence : Swift::String, Swift::Sendable, Swift::Codable {
+  case exact, high, medium, low
+  public init(from decoder: any Swift::Decoder) throws
+  public init?(rawValue: Swift::String)
+  public typealias RawValue = Swift::String
+  public var rawValue: Swift::String {
+    get
+  }
+}
+extension OptoLink::OptoLinkLogLevel : Swift::Equatable {}
+extension OptoLink::OptoLinkLogLevel : Swift::Hashable {}
+extension OptoLink::MatchMethod : Swift::Equatable {}
+extension OptoLink::MatchMethod : Swift::Hashable {}
+extension OptoLink::MatchMethod : Swift::RawRepresentable {}
+extension OptoLink::MatchConfidence : Swift::Equatable {}
+extension OptoLink::MatchConfidence : Swift::Hashable {}
+extension OptoLink::MatchConfidence : Swift::RawRepresentable {}
