@@ -9,7 +9,7 @@ distribution, zero dependencies beyond Foundation/URLSession; floor iOS 15 (tool
 
 ```swift
 dependencies: [
-    .package(url: "https://github.com/Optomatica/optolink-ios-sdk.git", from: "0.1.0"),
+    .package(url: "https://github.com/Optomatica/optolink-ios-sdk.git", from: "0.2.0"),
 ],
 targets: [
     .target(name: "YourApp", dependencies: [
@@ -79,11 +79,12 @@ Notes:
 | Capability | Surface | Notes |
 | --- | --- | --- |
 | **Direct links** | `handle(url:)` → `links` | Universal Links (primary) and custom-scheme URLs both go through the one entry point; resolves `{orgKey}/{shortCode}` to link data via the backend. |
-| **Deferred deep linking** | once-per-install on `initialize`; `resolveDeferredLink()` for manual re-attempt | Backend-owned ladder: clipboard → fingerprint (exact/scored) → IP. No install referrer exists on iOS (see Limitations). |
+| **Deferred deep linking** | once-per-install on `initialize`; `resolveDeferredLink()` for manual re-attempt | Deterministic clipboard token only: the backend runs no fingerprint or IP matching for Apple platforms. The pasteboard is cleared only when it held our token, nothing was copied since, and `/match` succeeded. No install referrer exists on iOS (see Limitations). |
 | **Identity** | `setIdentity(externalId:)`, `clearIdentity()` | Throwing trio; success is implicit. |
 | **Events** | `trackEvent(name:properties:)` | String name + `[String: String]` properties; oversize payloads surface as `OptoLinkApiError`. |
 
-Every matched link carries `OptoLinkData`: `linkId`, `path`, `params`, `matchMethod`
+Every matched link carries `OptoLinkData`: `linkId`, `path` (verbatim; may carry a query),
+`params`, `queryParams` (the query embedded in `path`, parsed; `nil` when none), `matchMethod`
 (`CLIPBOARD` / `FINGERPRINT_EXACT` / `FINGERPRINT_SCORED` / `IP_FUZZY` / `DIRECT` / `NONE`),
 `confidence`, `isDeferred`. Errors are `OptoLinkApiError` (HTTP, carries `status`,
 `requestId`, `retryAfterSeconds`) and `OptoLinkConnectionError` (transport). Wire in an
@@ -112,16 +113,13 @@ anywhere today** — point `baseUrl` at your OptoLink backend for real matches.
 ## Limitations
 
 - **No install-referrer channel exists on iOS.** The App Store carries no referrer, so all
-  deferred attribution rides clipboard + fingerprint + IP. FDL-style guarantees are impossible
-  by platform design; the clipboard gate is the mitigation, and a user who bounces to the App
-  Store before the redirect page's user-gesture clipboard write fires lands on the
-  fingerprint/IP path.
+  deferred attribution rides the clipboard token. FDL-style guarantees are impossible by
+  platform design; a user who bounces to the App Store before the redirect page's user-gesture
+  clipboard write fires gets no deferred match (direct links are unaffected).
 - **The clipboard leg is user-gesture-bound.** The copy happens via the redirect page's copy
-  affordance, not a silent background write. iOS 16+ reads silently via `detectPatterns`;
-  iOS <16 shows a one-time non-blocking paste banner.
-- **`IP_FUZZY` degrades under Private Relay / VPN / shared carrier IPs.** The last-resort leg
-  can silently become no-match; the surface communicates what you got (`matchMethod` +
-  `confidence`).
+  affordance, not a silent background write. On every supported version (iOS 15+) the SDK
+  first checks silently via `detectPatterns` and reads only when a web URL is present; the
+  system paste prompt then appears once. Declining leaves the pasteboard untouched.
 - **Timezone asymmetry is deliberate.** The iOS match body omits `timezone` (Safari's click
   side stores none); Android sends IANA tz — the two collectors are intentionally different.
   Flutter integrators additionally take a scored-path `deviceModel` penalty (a lower

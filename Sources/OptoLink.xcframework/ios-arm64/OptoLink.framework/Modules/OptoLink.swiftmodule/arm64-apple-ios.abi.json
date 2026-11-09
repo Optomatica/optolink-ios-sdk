@@ -2706,7 +2706,8 @@
             "moduleName": "OptoLink",
             "declAttributes": [
               "HasStorage",
-              "AccessControl"
+              "AccessControl",
+              "RawDocComment"
             ],
             "isLet": true,
             "hasStorage": true,
@@ -3009,6 +3010,91 @@
                 "mangledName": "$s8OptoLink0aB4DataV5scoreSiSgvg",
                 "moduleName": "OptoLink",
                 "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "queryParams",
+            "printedName": "queryParams",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.String : Swift.String]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Swift.String]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8OptoLink0aB4DataV11queryParamsSDyS2SGSgvp",
+            "mangledName": "$s8OptoLink0aB4DataV11queryParamsSDyS2SGSgvp",
+            "moduleName": "OptoLink",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "[Swift.String : Swift.String]?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Dictionary",
+                        "printedName": "[Swift.String : Swift.String]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ],
+                        "usr": "s:SD"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8OptoLink0aB4DataV11queryParamsSDyS2SGSgvg",
+                "mangledName": "$s8OptoLink0aB4DataV11queryParamsSDyS2SGSgvg",
+                "moduleName": "OptoLink",
                 "accessorKind": "get"
               }
             ]
@@ -4070,6 +4156,13 @@
       },
       {
         "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "OptoLink"
+      },
+      {
+        "kind": "Import",
         "name": "UIKit",
         "printedName": "UIKit",
         "declKind": "Import",
@@ -4115,196 +4208,196 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/andrew\/Development\/OPTOLINK\/optolink-ios\/.build\/xcframework-release\/intermediate\/dd-ios\/Build\/Intermediates.noindex\/OptoLink.build\/Release-iphoneos\/OptoLink-t.build\/DerivedSources\/resource_bundle_accessor.swift",
+      "filePath": "\/Users\/ahmedali\/Optomatica\/OptoLink\/optolink_code\/optolink-ios\/.build\/xcframework-release\/intermediate\/dd-ios\/Build\/Intermediates.noindex\/OptoLink.build\/Release-iphoneos\/OptoLink.build\/DerivedSources\/resource_bundle_accessor.swift",
       "kind": "StringLiteral",
       "offset": 307,
       "length": 19,
       "value": "\"OptoLink_OptoLink\""
     },
     {
-      "filePath": "\/Users\/andrew\/Development\/OPTOLINK\/optolink-ios\/.build\/xcframework-release\/intermediate\/dd-ios\/Build\/Intermediates.noindex\/OptoLink.build\/Release-iphoneos\/OptoLink-t.build\/DerivedSources\/resource_bundle_accessor.swift",
+      "filePath": "\/Users\/ahmedali\/Optomatica\/OptoLink\/optolink_code\/optolink-ios\/.build\/xcframework-release\/intermediate\/dd-ios\/Build\/Intermediates.noindex\/OptoLink.build\/Release-iphoneos\/OptoLink.build\/DerivedSources\/resource_bundle_accessor.swift",
       "kind": "Array",
       "offset": 973,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/andrew\/Development\/OPTOLINK\/optolink-ios\/.build\/xcframework-release\/intermediate\/dd-ios\/Build\/Intermediates.noindex\/OptoLink.build\/Release-iphoneos\/OptoLink-t.build\/DerivedSources\/resource_bundle_accessor.swift",
+      "filePath": "\/Users\/ahmedali\/Optomatica\/OptoLink\/optolink_code\/optolink-ios\/.build\/xcframework-release\/intermediate\/dd-ios\/Build\/Intermediates.noindex\/OptoLink.build\/Release-iphoneos\/OptoLink.build\/DerivedSources\/resource_bundle_accessor.swift",
       "kind": "StringLiteral",
       "offset": 1500,
       "length": 9,
       "value": "\".bundle\""
     },
     {
-      "filePath": "\/Users\/andrew\/Development\/OPTOLINK\/optolink-ios\/.build\/xcframework-release\/intermediate\/dd-ios\/Build\/Intermediates.noindex\/OptoLink.build\/Release-iphoneos\/OptoLink-t.build\/DerivedSources\/resource_bundle_accessor.swift",
+      "filePath": "\/Users\/ahmedali\/Optomatica\/OptoLink\/optolink_code\/optolink-ios\/.build\/xcframework-release\/intermediate\/dd-ios\/Build\/Intermediates.noindex\/OptoLink.build\/Release-iphoneos\/OptoLink.build\/DerivedSources\/resource_bundle_accessor.swift",
       "kind": "StringLiteral",
       "offset": 1652,
       "length": 47,
       "value": "\"unable to find bundle named OptoLink_OptoLink\""
     },
     {
-      "filePath": "\/Users\/andrew\/Development\/OPTOLINK\/optolink-ios\/Sources\/OptoLink\/ErrorMapping.swift",
+      "filePath": "\/Users\/ahmedali\/Optomatica\/OptoLink\/optolink_code\/optolink-ios\/Sources\/OptoLink\/ErrorMapping.swift",
       "kind": "StringLiteral",
       "offset": 646,
       "length": 27,
       "value": "\"Retry after (\\d+) second\""
     },
     {
-      "filePath": "\/Users\/andrew\/Development\/OPTOLINK\/optolink-ios\/Sources\/OptoLink\/HttpClient.swift",
+      "filePath": "\/Users\/ahmedali\/Optomatica\/OptoLink\/optolink_code\/optolink-ios\/Sources\/OptoLink\/HttpClient.swift",
       "kind": "StringLiteral",
       "offset": 1616,
       "length": 5,
       "value": "\"GET\""
     },
     {
-      "filePath": "\/Users\/andrew\/Development\/OPTOLINK\/optolink-ios\/Sources\/OptoLink\/HttpClient.swift",
+      "filePath": "\/Users\/ahmedali\/Optomatica\/OptoLink\/optolink_code\/optolink-ios\/Sources\/OptoLink\/HttpClient.swift",
       "kind": "StringLiteral",
       "offset": 1642,
       "length": 6,
       "value": "\"POST\""
     },
     {
-      "filePath": "\/Users\/andrew\/Development\/OPTOLINK\/optolink-ios\/Sources\/OptoLink\/Identity.swift",
+      "filePath": "\/Users\/ahmedali\/Optomatica\/OptoLink\/optolink_code\/optolink-ios\/Sources\/OptoLink\/Identity.swift",
       "kind": "StringLiteral",
       "offset": 1484,
       "length": 20,
       "value": "\"optolink_device_id\""
     },
     {
-      "filePath": "\/Users\/andrew\/Development\/OPTOLINK\/optolink-ios\/Sources\/OptoLink\/Identity.swift",
+      "filePath": "\/Users\/ahmedali\/Optomatica\/OptoLink\/optolink_code\/optolink-ios\/Sources\/OptoLink\/Identity.swift",
       "kind": "StringLiteral",
       "offset": 1541,
       "length": 28,
       "value": "\"optolink_first_launch_done\""
     },
     {
-      "filePath": "\/Users\/andrew\/Development\/OPTOLINK\/optolink-ios\/Sources\/OptoLink\/LinkIngestionEngine.swift",
+      "filePath": "\/Users\/ahmedali\/Optomatica\/OptoLink\/optolink_code\/optolink-ios\/Sources\/OptoLink\/LinkIngestionEngine.swift",
       "kind": "BooleanLiteral",
       "offset": 2111,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/andrew\/Development\/OPTOLINK\/optolink-ios\/Sources\/OptoLink\/LinkIngestionEngine.swift",
+      "filePath": "\/Users\/ahmedali\/Optomatica\/OptoLink\/optolink_code\/optolink-ios\/Sources\/OptoLink\/LinkIngestionEngine.swift",
       "kind": "Dictionary",
       "offset": 8280,
       "length": 3,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/andrew\/Development\/OPTOLINK\/optolink-ios\/Sources\/OptoLink\/OptoLink.swift",
+      "filePath": "\/Users\/ahmedali\/Optomatica\/OptoLink\/optolink_code\/optolink-ios\/Sources\/OptoLink\/OptoLink.swift",
       "kind": "Dictionary",
-      "offset": 11857,
+      "offset": 12123,
       "length": 3,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/andrew\/Development\/OPTOLINK\/optolink-ios\/Sources\/OptoLink\/OptoLinkConfig.swift",
+      "filePath": "\/Users\/ahmedali\/Optomatica\/OptoLink\/optolink_code\/optolink-ios\/Sources\/OptoLink\/OptoLinkConfig.swift",
       "kind": "IntegerLiteral",
       "offset": 743,
       "length": 2,
       "value": "10"
     },
     {
-      "filePath": "\/Users\/andrew\/Development\/OPTOLINK\/optolink-ios\/Sources\/OptoLink\/OptoLinkConfig.swift",
+      "filePath": "\/Users\/ahmedali\/Optomatica\/OptoLink\/optolink_code\/optolink-ios\/Sources\/OptoLink\/OptoLinkConfig.swift",
       "kind": "IntegerLiteral",
       "offset": 773,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/andrew\/Development\/OPTOLINK\/optolink-ios\/Sources\/OptoLink\/OptoLinkConfig.swift",
+      "filePath": "\/Users\/ahmedali\/Optomatica\/OptoLink\/optolink_code\/optolink-ios\/Sources\/OptoLink\/OptoLinkConfig.swift",
       "kind": "BooleanLiteral",
       "offset": 809,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/andrew\/Development\/OPTOLINK\/optolink-ios\/Sources\/OptoLink\/OptoLinkData.swift",
+      "filePath": "\/Users\/ahmedali\/Optomatica\/OptoLink\/optolink_code\/optolink-ios\/Sources\/OptoLink\/OptoLinkData.swift",
       "kind": "StringLiteral",
-      "offset": 1382,
+      "offset": 2279,
       "length": 11,
       "value": "\"CLIPBOARD\""
     },
     {
-      "filePath": "\/Users\/andrew\/Development\/OPTOLINK\/optolink-ios\/Sources\/OptoLink\/OptoLinkData.swift",
+      "filePath": "\/Users\/ahmedali\/Optomatica\/OptoLink\/optolink_code\/optolink-ios\/Sources\/OptoLink\/OptoLinkData.swift",
       "kind": "StringLiteral",
-      "offset": 1421,
+      "offset": 2318,
       "length": 18,
       "value": "\"INSTALL_REFERRER\""
     },
     {
-      "filePath": "\/Users\/andrew\/Development\/OPTOLINK\/optolink-ios\/Sources\/OptoLink\/OptoLinkData.swift",
+      "filePath": "\/Users\/ahmedali\/Optomatica\/OptoLink\/optolink_code\/optolink-ios\/Sources\/OptoLink\/OptoLinkData.swift",
       "kind": "StringLiteral",
-      "offset": 1501,
+      "offset": 2398,
       "length": 19,
       "value": "\"FINGERPRINT_EXACT\""
     },
     {
-      "filePath": "\/Users\/andrew\/Development\/OPTOLINK\/optolink-ios\/Sources\/OptoLink\/OptoLinkData.swift",
+      "filePath": "\/Users\/ahmedali\/Optomatica\/OptoLink\/optolink_code\/optolink-ios\/Sources\/OptoLink\/OptoLinkData.swift",
       "kind": "StringLiteral",
-      "offset": 1550,
+      "offset": 2447,
       "length": 20,
       "value": "\"FINGERPRINT_SCORED\""
     },
     {
-      "filePath": "\/Users\/andrew\/Development\/OPTOLINK\/optolink-ios\/Sources\/OptoLink\/OptoLinkData.swift",
+      "filePath": "\/Users\/ahmedali\/Optomatica\/OptoLink\/optolink_code\/optolink-ios\/Sources\/OptoLink\/OptoLinkData.swift",
       "kind": "StringLiteral",
-      "offset": 1590,
+      "offset": 2487,
       "length": 10,
       "value": "\"IP_FUZZY\""
     },
     {
-      "filePath": "\/Users\/andrew\/Development\/OPTOLINK\/optolink-ios\/Sources\/OptoLink\/OptoLinkData.swift",
+      "filePath": "\/Users\/ahmedali\/Optomatica\/OptoLink\/optolink_code\/optolink-ios\/Sources\/OptoLink\/OptoLinkData.swift",
       "kind": "StringLiteral",
-      "offset": 1619,
+      "offset": 2516,
       "length": 8,
       "value": "\"DIRECT\""
     },
     {
-      "filePath": "\/Users\/andrew\/Development\/OPTOLINK\/optolink-ios\/Sources\/OptoLink\/OptoLinkData.swift",
+      "filePath": "\/Users\/ahmedali\/Optomatica\/OptoLink\/optolink_code\/optolink-ios\/Sources\/OptoLink\/OptoLinkData.swift",
       "kind": "StringLiteral",
-      "offset": 1644,
+      "offset": 2541,
       "length": 6,
       "value": "\"NONE\""
     },
     {
-      "filePath": "\/Users\/andrew\/Development\/OPTOLINK\/optolink-ios\/Sources\/OptoLink\/OptoLinkData.swift",
+      "filePath": "\/Users\/ahmedali\/Optomatica\/OptoLink\/optolink_code\/optolink-ios\/Sources\/OptoLink\/OptoLinkData.swift",
       "kind": "StringLiteral",
-      "offset": 1907,
+      "offset": 2804,
       "length": 7,
       "value": "\"EXACT\""
     },
     {
-      "filePath": "\/Users\/andrew\/Development\/OPTOLINK\/optolink-ios\/Sources\/OptoLink\/OptoLinkData.swift",
+      "filePath": "\/Users\/ahmedali\/Optomatica\/OptoLink\/optolink_code\/optolink-ios\/Sources\/OptoLink\/OptoLinkData.swift",
       "kind": "StringLiteral",
-      "offset": 1923,
+      "offset": 2820,
       "length": 6,
       "value": "\"HIGH\""
     },
     {
-      "filePath": "\/Users\/andrew\/Development\/OPTOLINK\/optolink-ios\/Sources\/OptoLink\/OptoLinkData.swift",
+      "filePath": "\/Users\/ahmedali\/Optomatica\/OptoLink\/optolink_code\/optolink-ios\/Sources\/OptoLink\/OptoLinkData.swift",
       "kind": "StringLiteral",
-      "offset": 1940,
+      "offset": 2837,
       "length": 8,
       "value": "\"MEDIUM\""
     },
     {
-      "filePath": "\/Users\/andrew\/Development\/OPTOLINK\/optolink-ios\/Sources\/OptoLink\/OptoLinkData.swift",
+      "filePath": "\/Users\/ahmedali\/Optomatica\/OptoLink\/optolink_code\/optolink-ios\/Sources\/OptoLink\/OptoLinkData.swift",
       "kind": "StringLiteral",
-      "offset": 1956,
+      "offset": 2853,
       "length": 5,
       "value": "\"LOW\""
     },
     {
-      "filePath": "\/Users\/andrew\/Development\/OPTOLINK\/optolink-ios\/Sources\/OptoLink\/SDKVersion.swift",
+      "filePath": "\/Users\/ahmedali\/Optomatica\/OptoLink\/optolink_code\/optolink-ios\/Sources\/OptoLink\/SDKVersion.swift",
       "kind": "StringLiteral",
       "offset": 303,
       "length": 7,
-      "value": "\"0.1.0\""
+      "value": "\"0.2.0\""
     },
     {
-      "filePath": "\/Users\/andrew\/Development\/OPTOLINK\/optolink-ios\/Sources\/OptoLink\/TelemetryClient.swift",
+      "filePath": "\/Users\/ahmedali\/Optomatica\/OptoLink\/optolink_code\/optolink-ios\/Sources\/OptoLink\/TelemetryClient.swift",
       "kind": "Dictionary",
       "offset": 3072,
       "length": 3,

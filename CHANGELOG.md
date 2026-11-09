@@ -2,6 +2,18 @@
 
 The SDK runs its own semver clock: `0.x` while pre-stable, `1.0` when confident. A breaking change in the backend surface also forces an SDK major — the backend has no API versioning, so the SDK treats it as an uncontrolled external dependency. This file mirrors the changelog page on the OptoLink docs site (`sdk/ios/changelog`).
 
+## 0.2.0
+
+Clipboard leg behaviour change plus one additive API, `OptoLinkData.queryParams`.
+
+- `OptoLinkData.queryParams: [String: String]?` — the query embedded in `path`, parsed (e.g. `["uuid": "18f0"]` for `/event?uuid=18f0`; `nil` when none). Derived from `path` only, never merged with `params`, not part of the Codable payload. Form-encoding rules: `+` is a space, the last duplicate key wins, empty keys and `#fragment` are ignored, a malformed escape keeps its raw text. `path` itself is unchanged and still delivered verbatim.
+- No clipboard wipe: the SDK clears the pasteboard only when it extracted an `opl_` token, the `POST /match` call returned (hit or miss; a thrown match keeps the token for `resolveDeferredLink()`), and `UIPasteboard.changeCount` is unchanged since the read. Empty, denied, or non-OptoLink clipboard content is never cleared, and neither is anything the user copied after the read. Same rule in `resolveDeferredLink()`.
+- The `changeCount` check and the clear run as one main-actor step, so an in-app Copy that lands after `POST /match` returns is never wiped by the clear.
+- The `detectPatterns(.probableWebURL)` silent gate now runs on every supported version (iOS 15 included); the iOS 15 plain read on first launch is gone. A gate error still counts as closed (no read).
+- Note (unchanged from 0.1.0): if the first-launch `POST /match` fails, the token stays on the clipboard, so a later `resolveDeferredLink()` reads it again and the system "Allow Paste" alert can appear a second time.
+
+**Compatible with OptoLink backend v2.1.0+.**
+
 ## 0.1.0
 
 Initial release.
